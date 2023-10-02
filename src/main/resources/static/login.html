@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Ingresar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="Login"> 
+            <h1>Ingrese su informacion</h1>
+        </div>
+        <br>
+        <br>
+        <section class="login">
+            <h4>Ingrese los datos</h4>
+            <br>
+            <br>
+            <article>
+                <form action="#" method="GET">
+                    <label>Nombre</label>  <input type="text" name="nombre"/><br><br>
+                    <label>Correo electronico  </label><input type="email" name="correo" placeholder="digite el correo" /><br><br>
+                    <label>Contraseña</label>  <input type="password" name="password"/><br><br>
+                    <label>Fecha de nacimiento</label>  <input type="date" name="fecha" min="1910-01-01" max="2023-12-31"/><br><br>
+                    <label>Numero de telefono</label>  <input type="tel" name="telefono" placeholder="numero de telefono" /><br><br>
+                    <label>¿Que tanto te gusta la gastronomia?</label>  <input type="range" name="rango" value="0" min="1" max="100"
+                                                                               oninput="this.nextElementSibling.value=this.value"/> 
+                    <output>0</output><br><br>
+                    <h5>Marque lo que mas le guste</h5>
+                    <label>Panaderia</label> - <input type="checkbox" name="gastronomia"/> <br>
+                    <label>Pasteleria</label> - <input type="checkbox" name="gastronomia"/> <br>
+                    <label>Cocteleria</label> - <input type="checkbox" name="gastronomia"/> <br>
+                    <label>Gastronomia</label> - <input type="checkbox" name="gastronomia"/> <br><br>
+                    <h5>En caso de que trabaje en el area de la gastronomia ingrese su cargo</h5>
+                    <label>Cargo</label> - Chef Ejecutivo <input type="radio" name="cargo" value="1"/><br>
+                    <label>Cargo</label> - Sous Chef <input type="radio" name="cargo" value="2"/><br>
+                    <label>Cargo</label> - Chef de Partie <input type="radio" name="cargo" value="3"/><br> 
+                    <label>Cargo</label> - Pastelero <input type="radio" name="cargo" value="4"/><br> 
+                    <label>Cargo</label> - Sommelier <input type="radio" name="cargo" value="5"/><br> 
+                    <label>Cargo</label> - Panadero <input type="radio" name="cargo" value="6"/><br><br>
+
+                    <input type="submit" name="enviar" value="CONFIRMAR" style="background-color: #33ff00;"/><br><br>
+
+                </form>
+            </article>
+        </section>
+        <br>
+        <a href="index.html">
+            <input type="button" name="volver" value="Volver a la pagina principal" style="width: 200px; height: 50px; background-color: #442c00; color:beige;"/><br> 
+        </a>
+        <br>
+        <footer class="footer">Pagina de Jose Alberto Padilla Rivas - Curso desarrollo de aplicaciones web y patrones </footer>
+    </body>
+</html>
